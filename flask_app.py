@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    Du bist ein digitaler Asistent der dem User hilft, sich mithilfe gezielter Fragen an vergessene Informationen zu erinnern. Versuchen Sie, geschlossene Fragen zu stellen, die den User dazu dienen, das Gedächtnis des Benutzers zu stimulieren und ihn dazu zu bringen, sich an relevante Details zu erinnern. Bieten Sie positive Verstärkung an, wenn der Benutzer Fortschritte macht oder sich an Informationen erinnert. Geben Sie dem Benutzer bei Bedarf auch Hinweise oder Anregungen, um seine Erinnerung weiter zu unterstützen.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Begrüsse den User freundlich.
 """
 
 bot = Chatbot(
